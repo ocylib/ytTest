@@ -1,6 +1,24 @@
 {
-  "dependencies": {
-    "nodemon": "^2.0.20",
-    "ytcog": "^2.4.2"
-  }
+	"dependencies": {
+		"ytcog": "^2.4.2"
+	},
+	"name": "yttest",
+	"version": "1.0.0",
+	"main": "index.js",
+	"devDependencies": {},
+	"scripts": {
+		"test": "node index"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ocylib/ytTest.git"
+	},
+	"keywords": [],
+	"author": "OCY",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ocylib/ytTest/issues"
+	},
+	"homepage": "https://github.com/ocylib/ytTest#readme",
+	"description": ""
 }
