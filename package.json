@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "nodemon": "^2.0.20",
+    "ytcog": "^2.4.2"
+  }
+}
