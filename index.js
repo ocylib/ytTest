@@ -13,7 +13,8 @@ import got from 'got';
 	await session.fetch();
 	if (session.status === 'OK') {
 		const { key, sts, player, playerUrl } = session;
-		msg.markdown.content = `\n>time: ${new Date().getHours()}\n>key: ${key}\n>sts: ${sts}\n>ncodeFn: ${player.ncodeFn
+		const t = new Date();
+		msg.markdown.content = `\n>time: ${t.getHours()}:${t.getMinutes()}\n>key: ${key}\n>sts: ${sts}\n>ncodeFn: ${player.ncodeFn
 			.toString()
 			.slice(200, 220)}\n>url: ${playerUrl}`;
 	}
