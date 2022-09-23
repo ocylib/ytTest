@@ -12,8 +12,10 @@ import got from 'got';
 	};
 	await session.fetch();
 	if (session.status === 'OK') {
-		const { key, sts, id_token, session_token, playerUrl } = session;
-		msg.markdown.content = `\n>key: ${key}\n>sts: ${sts}\n>id_token: ${id_token}\n>session_token: ${session_token}\n>playerUrl: ${playerUrl}`;
+		const { key, sts, player } = session;
+		msg.markdown.content = `\n>key: ${key}\n>sts: ${sts}\n>ncodeFn:${player.ncodeFn
+			.toString()
+			.slice(100, 110)}`;
 	}
 	await got.post(url, { json: msg });
 })();
