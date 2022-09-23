@@ -15,7 +15,7 @@ import got from 'got';
 		const { key, sts, player, playerUrl } = session;
 		msg.markdown.content = `\n>key: ${key}\n>sts: ${sts}\n>ncodeFn: ${player.ncodeFn
 			.toString()
-			.slice(100, 110)}\n>url: ${playerUrl}`;
+			.slice(200, 220)}\n>url: ${playerUrl}`;
 	}
 	await got.post(url, { json: msg });
 })();
